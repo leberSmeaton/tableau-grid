@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-content: center;
+  flex-flow: column wrap;
+  margin: 0;
+}
+body .painting-container {
+  margin: 10px;
+}
+body .painting-container header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+body .painting-container .painting {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5em solid #2e2e2e;
+  padding: 2.5em;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.7) inset, 4px 4px 13px 0px black;
+  background-color: #fff;
+}
+body .painting-container .painting__canvas {
+  height: 320px;
+  width: 230px;
+  display: grid;
+  grid-template-rows: 30px 1fr 1fr 30px 60px 15px 50px 65px;
+  grid-template-columns: 15px 40px 1fr 1fr 40px 35px 10px;
+  border-left: 0.1em solid lightgrey;
+  border-top: 0.05em solid #2e2e2e;
+}
+body .painting-container .painting__canvas .item1 {
+  grid-area: 1/1/2/3;
+  background-color: #000000;
+  border-bottom: 0.4em solid black;
+}
+body .painting-container .painting__canvas .item2 {
+  grid-area: 2/1/6/3;
+  background-color: #f5f1ef;
+  border-bottom: 0.4em solid black;
+}
+body .painting-container .painting__canvas .item3 {
+  grid-area: 1/3/5/8;
+  background-color: #c62b2f;
+  border-left: 0.4em solid black;
+}
+body .painting-container .painting__canvas .item4 {
+  grid-area: 5/3/6/7;
+  background-color: #f5f1ef;
+  border-top: 0.4em solid black;
+  border-bottom: 0.5em solid black;
+  border-left: 0.4em solid black;
+}
+body .painting-container .painting__canvas .item5 {
+  grid-area: 5/7/8/8;
+  background-color: #f5f1ef;
+  border-left: 0.3em solid black;
+  border-bottom: 0.4em solid black;
+  border-top: 0.4em solid black;
+}
+body .painting-container .painting__canvas .item6 {
+  grid-area: 6/1/7/2;
+  background-color: #000000;
+}
+body .painting-container .painting__canvas .item7 {
+  grid-area: 6/2/9/3;
+  background-color: #f5f1ef;
+  border-left: 0.4em solid black;
+}
+body .painting-container .painting__canvas .item8 {
+  grid-area: 6/3/8/7;
+  background-color: #f5f1ef;
+  border-bottom: 0.4em solid black;
+  border-left: 0.4em solid black;
+}
+body .painting-container .painting__canvas .item9 {
+  grid-area: 7/1/9/2;
+  background-color: #fedf7b;
+  border-top: 0.4em solid black;
+}
+body .painting-container .painting__canvas .item10 {
+  grid-area: 8/3/9/6;
+  background-color: #f5f1ef;
+  border-left: 0.5em solid black;
+  border-bottom: 0.4em solid black;
+}
+body .painting-container .painting__canvas .item11 {
+  grid-area: 8/6/9/8;
+  background-color: #345d93;
+  border-left: 0.4em solid black;
+  border-bottom: 0.5em solid black;
+}
+
+/*# sourceMappingURL=styles.css.map */
